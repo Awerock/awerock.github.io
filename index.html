@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sleepwalking</title>
+    <title>Sleepwalking!</title>
     <link rel="icon" href="/ico/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://kit.fontawesome.com/845530799f.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
 </head>
 <body>
     <header>
@@ -38,6 +40,13 @@
             <img src="/logo/logo_text.png" alt="" class="main_img1">
             <img src="/logo/main_logo_1.png" alt="" class="main_img2">
             <img src="/ico/arrow.png" alt="" class="main_arrow">
+            <div id="twitch-embed"></div>
+            
+            <script type="text/javascript">
+                new Twitch.Player("twitch-embed", {
+                  channel: "awerock"
+                });
+              </script>
         </div>
     </section>
 
