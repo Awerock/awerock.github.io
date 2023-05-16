@@ -1,0 +1,57 @@
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../img/mini_star.png') fixed;
+    & img {
+        position: absolute;
+        pointer-events: none;
+    }
+    &__logo {
+        top: 15%;
+    }
+    &__big-stars {
+        height: 100vh;
+    }
+    &__mini-stars {
+        height: 100vh;
+        animation: fadein 3s ease-in-out alternate infinite;
+    }
+    &__earth {
+        width: 873px;
+        transform: translateY(50%);
+    }
+    &__luna {
+        transform: translateX(220%) translateY(-100px);
+        animation: shake 0.8s infinite;
+    }
+}
+
+@keyframes shake {
+    0% { 
+        transform: translate(220%, -100px); 
+    }
+    25% { 
+        transform: translate(219%, -99px); 
+    }
+    50% { 
+        transform: translate(220%, -100px); 
+    }
+    75% { 
+        transform: translate(221%, -101px); 
+    }
+    100% { 
+        transform: translate(220%, -100px); 
+    }
+  }
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

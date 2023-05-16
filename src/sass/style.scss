@@ -1,0 +1,20 @@
+@import 'base/variables';
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #20105c;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 30px
+}
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/about';

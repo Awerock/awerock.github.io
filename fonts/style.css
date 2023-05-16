@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Exo 2';
-    src: local('Exo 2 Thin'), local('Exo-2-Thin'),
-        url('Exo2-Thin.woff2') format('woff2'),
-        url('Exo2-Thin.woff') format('woff'),
-        url('Exo2-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-  }
