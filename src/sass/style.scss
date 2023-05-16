@@ -15,6 +15,18 @@ body {
     padding: 0 30px
 }
 
+.title {
+    text-align: center;
+    font-family: Montana;
+    font-size: 65.7px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+@import 'blocks/buttons';
 @import 'blocks/header';
 @import 'blocks/main';
 @import 'blocks/about';
+@import 'blocks/team';
+@import 'blocks/footer';

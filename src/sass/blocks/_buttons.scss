@@ -1,0 +1,22 @@
+.team__button {
+    background-color: #4a69be46;
+    border: 2px solid #74ba36;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    &:hover {
+        background-color: #74ba36;
+    }
+    &-active {
+        background-color: #74ba36;
+    }
+}
