@@ -7,6 +7,7 @@
     <title>Sleepwalking Team</title>
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/phosphor-icons@1.4.2/src/css/icons.css">
     <script src="https://kit.fontawesome.com/845530799f.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -43,16 +44,17 @@
         <div class="container">
             <h2 class="title team__title">teammates</h2>
             <div class="team__buttons">
-                <button class="team__button team__button-active">
+                <button class="team__button team__button-active" id="allButton">
                     ALL teammates
                 </button>
-                <button class="team__button">
+                <button class="team__button" id="apexButton">
                     APEX LEGENS
                 </button>
-                <button class="team__button">
+                <button class="team__button" id="fifaButton">
                     FIFA
                 </button>
             </div>
+            <div class="team__content" id="cardContainer"></div>
         </div>
     </section>
     <footer class="footer">
