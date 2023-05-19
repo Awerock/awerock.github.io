@@ -11,7 +11,13 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
+        transform-style: preserve-3d;
+        transform: perspective(100rem);
         &-item {
+            --rX: 0deg;
+            --rY: 0deg;
+            transform: rotateX(var(--rX)) rotateY(var(--rY));
+            transition: 0.1s;
             display: flex;
             align-items: center;
             flex-direction: column;

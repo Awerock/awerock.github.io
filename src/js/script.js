@@ -131,3 +131,24 @@ apexButton.addEventListener("click", (event) => {
     apexButton.classList.add("team__button-active");
 });
 
+
+
+
+let items3D = document.querySelectorAll('.team__content-item');
+items3D.forEach(item => {
+    item.addEventListener('mousemove', (e)=>{
+        let positionPx = e.x - item.getBoundingClientRect().left;
+        let positionX = (positionPx / item.offsetWidth) * 100;
+
+        let positionPy = e.y - item.getBoundingClientRect().top;
+        let positionY = (positionPy / item.offsetHeight) * 100;
+
+        
+        item.style.setProperty('--rX', (0.3)*(50 - positionY) + 'deg');
+        item.style.setProperty('--rY', -(0.3)*(50 - positionX) + 'deg');
+    })
+    item.addEventListener('mouseout', ()=>{
+        item.style.setProperty('--rX', '0deg');
+        item.style.setProperty('--rY', '0deg');
+    })
+})
