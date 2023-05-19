@@ -111,6 +111,7 @@ allButton.addEventListener("click", (event) => {
     allButton.classList.add("team__button-active");
     fifaButton.classList.remove("team__button-active");
     apexButton.classList.remove("team__button-active");
+    mouse3dAnimation();
 });
 
 const fifaButton = document.getElementById('fifaButton');
@@ -120,6 +121,7 @@ fifaButton.addEventListener("click", (event) => {
     allButton.classList.remove("team__button-active");
     fifaButton.classList.add("team__button-active");
     apexButton.classList.remove("team__button-active");
+    mouse3dAnimation();
 });
 
 const apexButton = document.getElementById('apexButton');
@@ -129,26 +131,29 @@ apexButton.addEventListener("click", (event) => {
     allButton.classList.remove("team__button-active");
     fifaButton.classList.remove("team__button-active");
     apexButton.classList.add("team__button-active");
+    mouse3dAnimation();
 });
 
 
+function mouse3dAnimation() {
+    let items3D = document.querySelectorAll('.team__content-item');
+    items3D.forEach(item => {
+        item.addEventListener('mousemove', (e)=>{
+            let positionPx = e.x - item.getBoundingClientRect().left;
+            let positionX = (positionPx / item.offsetWidth) * 100;
+    
+            let positionPy = e.y - item.getBoundingClientRect().top;
+            let positionY = (positionPy / item.offsetHeight) * 100;
+    
+            
+            item.style.setProperty('--rX', (0.3)*(50 - positionY) + 'deg');
+            item.style.setProperty('--rY', -(0.3)*(50 - positionX) + 'deg');
+        })
+        item.addEventListener('mouseout', ()=>{
+            item.style.setProperty('--rX', '0deg');
+            item.style.setProperty('--rY', '0deg');
+        });
+    });
+}
 
-
-let items3D = document.querySelectorAll('.team__content-item');
-items3D.forEach(item => {
-    item.addEventListener('mousemove', (e)=>{
-        let positionPx = e.x - item.getBoundingClientRect().left;
-        let positionX = (positionPx / item.offsetWidth) * 100;
-
-        let positionPy = e.y - item.getBoundingClientRect().top;
-        let positionY = (positionPy / item.offsetHeight) * 100;
-
-        
-        item.style.setProperty('--rX', (0.3)*(50 - positionY) + 'deg');
-        item.style.setProperty('--rY', -(0.3)*(50 - positionX) + 'deg');
-    })
-    item.addEventListener('mouseout', ()=>{
-        item.style.setProperty('--rX', '0deg');
-        item.style.setProperty('--rY', '0deg');
-    })
-})
+mouse3dAnimation();
