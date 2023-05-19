@@ -29,14 +29,14 @@ const players = [
     {
         name: "Daniel Yefimov", 
         username: "Patrick_INCorp",
-        img: "none", 
+        img: "./img/danya.jpg",
         games: ["Apex"], 
         handle: "@INC_PatrIck" 
     },
     {
         name: "Igor Baranov", 
         username: "Vindemaitrix",
-        img: "none", 
+        img: "./img/igor.jpg", 
         games: ["Apex"], 
         handle: "@_sqpo_1206" 
     },
@@ -48,9 +48,9 @@ const players = [
         handle: "@bolyabkin" 
     },
     {
-        name: "Andrey Feschenko", 
+        name: "Andrey Feshenko", 
         username: "andreeew94",
-        img: "none", 
+        img: "./img/nos.jpg", 
         games: ["FIFA"], 
         handle: "@andreeew94" 
     },
