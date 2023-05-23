@@ -1,0 +1,83 @@
+.connect {
+    min-height: 500px;
+    background: url('../img/mini_star.png') #160b3f;
+    padding: 50px 0;
+    &__block {
+        margin: 0 auto;
+        max-width: 650px;
+        max-height: 550px;
+        background-color: #fff;
+        border-radius: 20px;
+        justify-content: space-between;
+        padding: 50px;
+    }
+    &__title {
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 600;
+        color: #535353;
+        text-align: justify;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__descr {
+        margin-top: -20px;
+        height: 500px;
+    }
+    &__descr-title {
+        text-indent: 15px;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 500;
+        color: #b9b9b9;
+        text-align: justify;
+        max-width: 300px;
+    }
+    &__content {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__img {
+        max-width: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__input {
+        display: block;
+        max-width: 300px;
+        background: #e6e6e6;
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 1.5;
+        font-weight: 700;
+        color: #000000;
+    }
+    &__area {
+        outline: none;
+        border: none;
+        resize: none;
+    }
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+input.connect__input {
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+}
+
+textarea.connect__input {
+    min-height: 150px;
+    border-radius: 25px;
+    padding: 12px 30px;
+}
