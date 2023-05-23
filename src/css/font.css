@@ -156,3 +156,14 @@
     font-weight: 100;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Montana';
+    src: url('../fonts/Montana-Regular.woff');
+    src: local('Montana-Regular'), local('Montana-Regular'),
+        url('../fonts/Montana-Regular.woff') format('woff'),
+        url('../fonts/Montana-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
