@@ -171,27 +171,13 @@
 @media (max-width: 400px) {
     .parallax {
         &__logo {
-            width: 40vh;
-        }
-        &__big-stars {
-            height: 40vh;
-        }
-        &__mini-stars {
-            height: 40vh;
-        }
-    }
-}
-
-@media (max-width: 300px) {
-    .parallax {
-        &__logo {
             width: 30vh;
         }
         &__big-stars {
-            height: 30vh;
+            height: 20vh;
         }
         &__mini-stars {
-            height: 30vh;
+            height: 20vh;
         }
     }
 }
