@@ -26,6 +26,18 @@ body {
     margin-bottom: 50px;
 }
 
+@media (max-width: 700px) {
+    .title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 30px;
+    }
+}
+
 @import 'blocks/buttons';
 @import 'blocks/header';
 @import 'blocks/main';

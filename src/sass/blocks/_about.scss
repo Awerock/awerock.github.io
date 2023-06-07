@@ -20,3 +20,25 @@
         text-align: justify;
     }
 }
+
+@media (max-width: 690px) {
+    .about {
+        &__descr {
+            font-size: 25px;
+        }
+        &__title {
+            font-size: 50px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .about {
+        &__descr {
+            font-size: 20px;
+        }
+        &__title {
+            font-size: 35px;
+        }
+    }
+}

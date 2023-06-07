@@ -25,3 +25,25 @@
         }
     }
 }
+
+@media (max-width: 620px) {
+    .header {
+        &__logo {
+            font-size: 1.2em;
+        }
+        &__nav a {
+            font-size: 0.8em;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .header {
+        &__logo {
+            font-size: 1em;
+        }
+        &__nav a {
+            font-size: 0.7em;
+        }
+    }
+}

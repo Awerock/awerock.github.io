@@ -55,3 +55,143 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 1132px) {
+    .parallax {
+        &__luna {
+            transform: translateX(150%) translateY(-100px);
+            animation: shake 0.8s infinite;
+        }
+    }
+
+    @keyframes shake {
+        0% { 
+            transform: translate(150%, -100px); 
+        }
+        25% { 
+            transform: translate(149%, -99px); 
+        }
+        50% { 
+            transform: translate(150%, -100px); 
+        }
+        75% { 
+            transform: translate(151%, -101px); 
+        }
+        100% { 
+            transform: translate(150%, -100px); 
+        }
+      }
+}
+
+@media (max-width: 922px) {
+    .parallax {
+        &__luna {
+            width: 20%;
+            transform: translateX(150%) translateY(-100px);
+            animation: shake 0.8s infinite;
+        }
+        &__earth {
+            width: 70%;
+            transform: translateY(50%);
+        }
+    }
+
+    @keyframes shake {
+        0% { 
+            transform: translate(150%, -100px); 
+        }
+        25% { 
+            transform: translate(149%, -99px); 
+        }
+        50% { 
+            transform: translate(150%, -100px); 
+        }
+        75% { 
+            transform: translate(151%, -101px); 
+        }
+        100% { 
+            transform: translate(150%, -100px); 
+        }
+      }
+}
+
+@media (max-width: 785px) {
+    .parallax {
+        &__big-stars {
+            height: 90vh;
+        }
+        &__mini-stars {
+            height: 90vh;
+            animation: fadein 3s ease-in-out alternate infinite;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .parallax {
+        &__big-stars {
+            height: 80vh;
+        }
+        &__mini-stars {
+            height: 80vh;
+            animation: fadein 3s ease-in-out alternate infinite;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .parallax {
+        &__logo {
+            width: 60vh;
+        }
+        &__big-stars {
+            height: 60vh;
+        }
+        &__mini-stars {
+            height: 60vh;
+            animation: fadein 3s ease-in-out alternate infinite;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .parallax {
+        &__logo {
+            width: 50vh;
+        }
+        &__big-stars {
+            height: 50vh;
+        }
+        &__mini-stars {
+            height: 50vh;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .parallax {
+        &__logo {
+            width: 40vh;
+        }
+        &__big-stars {
+            height: 40vh;
+        }
+        &__mini-stars {
+            height: 40vh;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .parallax {
+        &__logo {
+            width: 30vh;
+        }
+        &__big-stars {
+            height: 30vh;
+        }
+        &__mini-stars {
+            height: 30vh;
+        }
+    }
+}
