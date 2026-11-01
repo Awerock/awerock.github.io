@@ -1,0 +1,53 @@
+[
+  {
+    "id": "awerock",
+    "name": "Eugene Chi",
+    "nick": "Awerock",
+    "bio": "",
+    "image": "img/me.jpg",
+    "games": [
+      "Apex Legends",
+      "FIFA"
+    ]
+  },
+  {
+    "id": "patrick",
+    "name": "Daniel Yefimov",
+    "nick": "Patrick_INCorp",
+    "bio": "",
+    "image": "img/danya.jpg",
+    "games": [
+      "Apex Legends"
+    ]
+  },
+  {
+    "id": "igor",
+    "name": "Igor Baranov",
+    "nick": "Vindemaitrix",
+    "bio": "",
+    "image": "img/igor.jpg",
+    "games": [
+      "Apex Legends"
+    ]
+  },
+  {
+    "id": "miha",
+    "name": "Mikhail Bolyabkin",
+    "nick": "I'M MIHA, SORRY!",
+    "bio": "",
+    "image": "img/bolyabkin.jpg",
+    "games": [
+      "Apex Legends"
+    ]
+  },
+  {
+    "id": "andrey",
+    "name": "Andrey Feshenko",
+    "nick": "andreeew94",
+    "bio": "",
+    "image": "img/nos.jpg",
+    "games": [
+      "FIFA"
+    ]
+  }
+]
