@@ -11,7 +11,12 @@ git add -- src/index.html src/css/afterhours.css src/js/afterhours.js src/data s
 if ($LASTEXITCODE -ne 0) { throw 'Could not prepare changes.' }
 git diff --cached --quiet
 if ($LASTEXITCODE -eq 1) {
- git commit -m 'Update Sleepwalking website and roster'
+ $authorName = git config user.name
+ $authorEmail = git config user.email
+ if (-not $authorName) { $authorName = Read-Host 'Your name for this Git commit' }
+ if (-not $authorEmail) { $authorEmail = Read-Host 'Your GitHub email (or GitHub noreply email)' }
+ if (-not $authorName -or -not $authorEmail) { throw 'Name and email are required. Local changes are safe.' }
+ git -c "user.name=$authorName" -c "user.email=$authorEmail" commit -m 'Update Sleepwalking website and roster'
  if ($LASTEXITCODE -ne 0) { throw 'Commit failed. Check Git name and email settings.' }
 }
 git push origin dev
