@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" fill="none">
+<defs>
+<linearGradient id="hull" x1="500" y1="65" x2="500" y2="310" gradientUnits="userSpaceOnUse"><stop stop-color="#5c7285"/><stop offset=".32" stop-color="#263c50"/><stop offset=".65" stop-color="#101c2a"/><stop offset="1" stop-color="#060b13"/></linearGradient>
+<linearGradient id="panel" x1="340" y1="90" x2="700" y2="230" gradientUnits="userSpaceOnUse"><stop stop-color="#40576b"/><stop offset="1" stop-color="#102130"/></linearGradient>
+<linearGradient id="wing" x1="300" y1="60" x2="500" y2="300" gradientUnits="userSpaceOnUse"><stop stop-color="#1a2c3f"/><stop offset=".5" stop-color="#344a5c"/><stop offset="1" stop-color="#09111c"/></linearGradient>
+<linearGradient id="exhaust"><stop stop-color="#00aeef" stop-opacity="0"/><stop offset=".7" stop-color="#00aeef" stop-opacity=".5"/><stop offset="1" stop-color="#d4f9ff"/></linearGradient>
+<filter id="glow" x="-100%" y="-200%" width="300%" height="500%"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<!-- Engine wakes and nacelles -->
+<path d="M0 138L270 121V149Z M10 257L264 232V260Z" fill="url(#exhaust)" opacity=".55" filter="url(#glow)"/>
+<path d="M70 135L270 127V141Z M95 248L264 239V251Z" fill="url(#exhaust)"/>
+<!-- Far fin and wing -->
+<path d="M258 127L318 43 398 52 515 133 426 165Z" fill="url(#wing)" stroke="#637d92" stroke-width="1.4"/>
+<path d="M322 52L399 62 476 119 366 99Z" fill="#142334"/><path d="M324 47L402 56 469 101" stroke="#78b6d0" stroke-opacity=".6"/>
+<path d="M333 94L367 71 422 103 399 124Z" fill="#07101c" stroke="#435f75"/>
+<path d="M231 119L330 103 396 125 363 155 241 154Z" fill="url(#hull)" stroke="#536d82"/>
+<path d="M238 127L257 125 257 146 237 146Z" fill="#b2f3ff"/><path d="M237 127L257 125V146H237Z" fill="#00aeef" filter="url(#glow)"/>
+<!-- Main long carrier body -->
+<path d="M291 146L466 101 685 125 935 177 978 191 930 213 638 238 350 218 276 184Z" fill="url(#hull)" stroke="#728ea4" stroke-width="1.5"/>
+<path d="M300 166L482 124 690 145 932 183 831 194 514 172 337 188Z" fill="url(#panel)"/>
+<path d="M312 147L467 107 685 130 925 178" stroke="#a6d1e1" stroke-opacity=".55"/>
+<path d="M368 214L638 232 930 208 965 193 836 204 535 202Z" fill="#080f19"/>
+<path d="M415 144L532 135 674 151 702 170 542 161Z" fill="#162a3b" stroke="#526d80"/>
+<path d="M711 153L842 175 782 178 715 169Z" fill="#07101d" stroke="#2e677e"/><path d="M723 159L807 173 775 174 724 167Z" fill="#68d4f4" opacity=".8"/>
+<!-- Armored raised bridge -->
+<path d="M462 130L492 90 551 87 622 139 567 152Z" fill="url(#panel)" stroke="#688499"/>
+<path d="M499 95L548 93 582 118 488 113Z" fill="#061723"/><path d="M502 99L546 98 565 112 493 108Z" fill="#76d8f2" opacity=".7"/>
+<path d="M485 89L491 65 495 66 496 88 M530 87L538 58 541 59 538 87" stroke="#91afbe" stroke-width="2"/>
+<circle cx="539" cy="57" r="2" fill="#c6f4ff"/>
+<!-- Near wing and drive block -->
+<path d="M384 181L586 184 503 281 370 302 281 251Z" fill="url(#wing)" stroke="#6c879b" stroke-width="1.5"/>
+<path d="M389 194L546 196 494 260 378 277 310 247Z" fill="#142637" stroke="#334d62"/>
+<path d="M379 284L494 267 548 204" stroke="#54b7d9" stroke-opacity=".55"/>
+<path d="M224 230L321 215 400 232 373 265 235 270 215 252Z" fill="url(#hull)" stroke="#668095"/>
+<path d="M231 239L252 236 249 260 229 262Z" fill="#bcefff"/><path d="M230 239L253 236 249 260 228 263Z" fill="#00aeef" filter="url(#glow)"/>
+<!-- Panel seams, vents, running lights -->
+<g stroke="#7c96aa" stroke-opacity=".36"><path d="M355 159L388 171 439 158 M603 178L601 199 M650 181L649 201 M690 183L690 202 M738 188L739 203 M798 193L800 204 M354 229L343 252 M376 236L365 258"/></g>
+<g stroke="#080e16" stroke-width="4"><path d="M418 213L433 201 M432 215L447 203 M446 217L461 205 M460 219L475 207 M299 126L307 140 M312 123L320 137 M325 121L333 135"/></g>
+<path d="M847 199L919 193 M397 286L431 281" stroke="#8ae6ff" stroke-width="2"/><circle cx="941" cy="191" r="2.5" fill="#d1f8ff"/><circle cx="373" cy="295" r="2" fill="#00aeef"/>
+</svg>

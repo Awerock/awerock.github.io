@@ -1,0 +1,9 @@
+Sources for decorative game marks in this local concept:
+Apex Legends (Respawn / EA): https://commons.wikimedia.org/wiki/File:Apex_Legends_logo.svg
+Call of Duty (Activision): https://commons.wikimedia.org/wiki/File:Call_of_Duty_2023_logo.svg
+FIFA: https://github.com/simple-icons/simple-icons/blob/develop/icons/fifa.svg
+No affiliation or sponsorship is implied. Logos identify games only.
+Additional marks from Simple Icons: counterstrike, valorant, dota2, leagueoflegends, fortnite, pubg.
+Source: https://github.com/simple-icons/simple-icons/tree/develop/icons
+Rocket League black text logo (Psyonix), PD-textlogo: https://commons.wikimedia.org/wiki/File:Rocket_League_black_text_logo.svg
+Files retained unchanged; display uses a monochrome CSS filter. This is a selection of recognizable competitive games, not a measured popularity ranking.

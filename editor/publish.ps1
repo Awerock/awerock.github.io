@@ -7,7 +7,7 @@ if ($remote -ne 'https://github.com/Awerock/awerock.github.io.git') { throw 'Une
 git status --short
 $answer = Read-Host 'Publish these site changes to GitHub? Type YES'
 if ($answer -ne 'YES') { Write-Host 'Cancelled'; exit }
-git add -- src/index.html src/css/afterhours.css src/css/cosmos.css src/img/earth-map.svg src/img/team-logo.png src/js/afterhours.js src/data src/img/uploads editor start-editor.cmd publish.cmd README.md DESIGN.md .gitignore
+git add -- src/index.html src/css src/js src/img/earth-map.svg src/img/team-logo.png src/img/sleepwalking-cruiser.svg src/img/games src/data src/img/uploads editor start-editor.cmd publish.cmd README.md DESIGN.md .gitignore
 if ($LASTEXITCODE -ne 0) { throw 'Could not prepare changes.' }
 git diff --cached --quiet
 if ($LASTEXITCODE -eq 1) {
