@@ -8,7 +8,7 @@ const source=process.env.SW_DATA_ROOT||path.join(root,'src');
 const dataFile=path.join(source,'data','players.json');
 const port=Number(process.env.PORT||4173),origin=`http://127.0.0.1:${port}`,token=randomBytes(32).toString('hex');
 const version=b=>createHash('sha256').update(b).digest('hex');
-const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.jpg':'image/jpeg','.jpeg':'image/jpeg','.png':'image/png','.webp':'image/webp','.woff':'font/woff','.woff2':'font/woff2'};
+const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.jpg':'image/jpeg','.jpeg':'image/jpeg','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml','.woff':'font/woff','.woff2':'font/woff2'};
 function validate(players){
  if(!Array.isArray(players)||players.length>200)throw Error('Допустимо до 200 игроков.');
  const ids=new Set();
